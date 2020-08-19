@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t jaydeemourg/dockeer-react -f Dockerfile.dev .
+  - docker build -t jaydeemourg/docker-react -f Dockerfile.dev .
 
 script:
   - docker run jaydeemourg/docker-react npm run test -- --coverage
